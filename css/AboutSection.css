@@ -1,0 +1,88 @@
+.AboutSection {
+    width: 100%;
+
+    background-color: var(--color-blue-dark);
+
+    display: flex;
+}
+
+.AboutSection__container {
+    margin: 56px auto;
+}
+
+.AboutSection__title {
+    color: var(--color-white);
+
+    max-width: calc(var(--breakpoint-widescreen) / 3);
+
+    margin-bottom: var(--margin-bottom-title);
+}
+
+.AboutSection__divisor {
+    background-color: var(--color-white);
+
+    margin-bottom: var(--margin-bottom);
+}
+
+.AboutSection__description {
+    color: var(--color-white);
+    font-size: 1.0em;
+
+    text-align: center;
+
+    max-width: calc(var(--breakpoint-widescreen) / 2);
+
+    margin-bottom: var(--margin-bottom);
+}
+
+.AbouSection__description-bold {
+    font-weight: 700;
+}
+
+.AboutSection__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 32px;
+
+    margin-bottom: var(--margin-bottom);
+}
+
+.AboutSection__grid-card {
+    background-color: var(--color-white);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 251px;
+    height: 241px;
+
+    border-radius: 8px;
+}
+
+.AboutSection__grid-text {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.AboutSection__law {
+    color: var(--color-white);
+    
+    font-size: 0.750em;
+    font-weight: 700;
+}
+
+.AboutSection__law-link {
+    color: var(--color-yellow);
+}
+
+.AboutSection__law-link:hover {
+    filter: brightness(110%);
+}
+
+
+
+

@@ -1,0 +1,77 @@
+:root {
+    --color-yellow: #FFC800;
+    --color-blue: #569AC4;
+    --color-blue-dark: #6AB7E7;
+    --color-gray: #929292;
+    --color-gray-light: #808080;
+    --color-gray-dark: #585858;
+    --color-gray-bg: #F5F5F5;
+    --color-gray-phone: #939393;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-black-title: #474747;
+    --color-green: #69CF61;
+    --color-green-icon: #29B47E;
+    --color-green-bg: #27D18F;
+    --color-footer: #274657;
+
+    --breakpoint-mobile: 576px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-notebook: 768px;
+    --breakpoint-desktop: 1200px;
+    --breakpoint-widescreen: 1600px;
+
+    --margin-bottom: 34px;
+    --margin-bottom-title: 22px;
+    --margin-bottom-button: 40px;
+}
+
+/* @font-face {
+    font-family: 'MyriadProRegular';
+    src: url('./fonts/MyriadProRegular')
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.3s;
+    outline: none;
+    font-family: 'open-sans', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+}
+
+.Container {
+    width: 100%;
+    max-width: var(--breakpoint-widescreen);
+    
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Divisor {
+    height: 8px;
+    width: 125px;
+    
+    background-color: var(--color-yellow);
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}

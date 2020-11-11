@@ -1,0 +1,25 @@
+.PageFooter {
+    width: 100%;
+
+    background-color: var(--color-footer);
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.PageFooter__text {
+    text-align: center;
+
+    color: var(--color-white);
+
+    font-size: 0.875em;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+}
+
+.PageFooter__text-image {
+    margin-left: 10px;
+}

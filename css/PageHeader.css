@@ -1,0 +1,81 @@
+#PageContent {
+    width: 100%;
+    height: 4520px;
+}
+
+.PageHeader {
+    width: 100%;
+    max-width: 1600px;
+    height: 150px;
+    
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+    background-color: var(--color-white);
+}
+
+.PageHeader .PageHeader__logo {
+    width: 252px;
+    height: 71px;
+    margin: 40px 200px 40px 0;
+}
+
+.PageHeader .PageHeader__logo img {
+    height: 100%;
+}
+
+.PageHeader .PageHeader__menu {
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+}
+
+
+.PageHeader .PageHeader__menu ul {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    list-style-type: none;
+}
+
+
+.PageHeader .PageHeader__menu .PageHeader__menu-principal li.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.PageHeader .PageHeader__menu .PageHeader__menu-principal li.partners .PageHeader__menu-secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PageHeader .PageHeader__menu .PageHeader__menu-principal a {
+    color: var(--color-gray);
+    font-weight: 700;
+}
+
+.PageHeader .PageHeader__menu .PageHeader__menu-principal li.partners .PageHeader__menu-secondary a {
+    color: var(--color-gray-light);
+    font-weight: normal;
+}
+
+.PageHeader .PageHeader__menu .PageHeader__menu-principal li.partners .PageHeader__menu-secondary a:hover {
+    color: var(--color-blue);
+}
+
+.PageHeader .PageHeader__menu ul li a {
+    font-size: 0.875em;
+    font-weight: 400;
+}
+
+.PageHeader .PageHeader__menu ul li a:hover {
+    color: var(--color-blue);
+}
