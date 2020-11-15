@@ -40,12 +40,10 @@
 }
 
 .AboutSection__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 32px;
-
     margin-bottom: var(--margin-bottom);
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
 }
 
 .AboutSection__grid-card {
@@ -60,12 +58,17 @@
     height: 241px;
 
     border-radius: 8px;
+
+    padding: 30px;
 }
 
 .AboutSection__grid-text {
     text-align: center;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 1.4em;
+    text-align: left;
+    color: var(--color-gray-dark);
 }
 
 .AboutSection__law {
@@ -81,6 +84,24 @@
 
 .AboutSection__law-link:hover {
     filter: brightness(110%);
+}
+
+@media (min-width: 768px) {
+    .AboutSection__description {
+        padding-left: 40px;
+    }
+
+    .AboutSection__grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .AboutSection__grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 

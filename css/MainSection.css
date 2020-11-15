@@ -80,3 +80,9 @@
     filter: brightness(110%);
 }
 
+@media (min-width: 768px) {
+    .MainSection__description {
+        padding-left: 40px;
+    }
+}
+

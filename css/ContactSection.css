@@ -1,20 +1,39 @@
 .ContactSection {
     width: 100%;
 
-    background-color: var(--color-blue);
+    background-image: url('../assets/imgs/background-form-marlin.png');
+    background-size: 130%;
+    background-attachment: fixed;
+    background-position-y: center;
+    background-position-x: 40%;
 
     display: flex;
 }
 
 .ContactSection__container {
+    max-width: 100%;
+    
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ContactSection__formContainer {
     width: 100%;
-    max-width: 997px;
+
+    background-color: var(--color-blue);
+
+    padding: 120px 0;
+}
+
+.ContactSection__wrap {
+    padding: 0 20px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin: 121px auto;
 }
 
 .ContactSection__title {
@@ -38,8 +57,7 @@
 
 .ContacSection__formArea {
     width: 100%;
-    max-width: 575px;
-
+    max-width: 570px;
     display: flex;
     flex-direction: column;
 }
@@ -57,7 +75,7 @@
 
     color: var(--color-white);
 
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .ContactSection__formArea-section-legend {
@@ -66,13 +84,12 @@
 
     color: var(--color-white);
 
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .ContactSection__formArea-section-input {
     width: 100%;
-    max-width: 575px;
-    padding: 23px 429px 19px 25px;
+    padding: 20px;
     margin-bottom: 47px;
 
     border: none;
@@ -82,15 +99,17 @@
 .ContactSection__formArea-section-textarea {
     border: none;
     border-radius: 8px;
+    
+    resize: none;
+    overflow-y: scroll;
 
     margin-bottom: 47px;
+    padding: 20px;
 }
 
 .ContactSection__button {
-    width: 157px;
-    height: 50px;
-    padding: 20px 52px 20px 52px;
-    margin-left: 415px;
+    padding: 20px 52px;
+    margin-left: auto;
     margin-bottom: 60px;
 
     background-color: var(--color-green);
@@ -110,20 +129,25 @@
 }
 
 .ContactSection__card {
-    width: 575px;
+    max-width: 570px;
 
     background-color: var(--color-white);
     
     border-radius: 8px;
+
+    padding: 50px 25px;
 }
 
-.ContactSection__card-title {
+.ContactSection__card-title,
+.ContactSection__card-title-color {
     color: var(--color-black-title);
 
     font-size: 2em;
     text-align: center;
+}
 
-    padding: 56px 78px 52px 71px;
+.ContactSection__card-title-color {
+    margin-bottom: 52px;
 }
 
 .ContactSection__card-title-color {
@@ -132,13 +156,21 @@
     font-weight: 700;
 }
 
+.ContactSection__row {
+    margin-bottom: 52px;
+}
+
+.ContactSection__row,
+.ContactSection__row2 {
+    display: flex;
+    align-items: center;
+}
+
 .ContactSection__card-telephone {
     color: var(--color-gray-phone);
 
     font-size: 1.250em;
     font-weight: 700;
-
-    margin-bottom: 52px;
 
     display: flex;
 }
@@ -146,6 +178,8 @@
 .ContactSection__card-telephone-icon {
     width: 58px;
     height: 58px;
+
+    margin-right: 25px;
 
     background-image: url('../assets/imgs/telephone@1X.png');
 
@@ -159,8 +193,7 @@
 }
 
 .ContactSection__card-whatsapp {
-    width: 454px;
-    height: 73px;
+    width: 100%;
     
     background-color: var(--color-green-bg);
     color: var(--color-white);
@@ -169,13 +202,14 @@
     font-weight: 700;
     text-align: center;
 
-    padding: 24px 64px;
     margin-bottom: 74px; 
 
     border-radius: 8px;
 
     display: flex;
     align-items: center;
+
+    overflow: hidden;
 }
 
 .ContactSection__card-whatsapp-icon {
@@ -184,8 +218,12 @@
 
     background-color: var(--color-green-icon);
     background-image: url('../assets/imgs/whatsapp-brands@1X.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-    display: flex;
+.ContactSection__card-whatsapp-text {
+    margin: auto;
 }
 
 .ContactSection__card-address {
@@ -194,8 +232,6 @@
     font-size: 1.250em;
 
     display: flex;
-
-    margin-bottom: 53px;
 }
 
 .ContactSection__card-address-icon {
@@ -205,6 +241,8 @@
     background-image: url('../assets/imgs/map@1X.png');
 
     display: flex;
+
+    margin-right: 25px;
 }
 
 .ContactSection__card-adress-color {
@@ -213,6 +251,22 @@
     color: var(--color-blue);
 }
 
-/* .ContactSection__photo {
+@media (min-width: 1024px) {
+    .ContactSection__formContainer {
+        padding: 120px calc((100% - 1200px) / 2);
 
-} */
+        width: auto;
+    }
+
+    .ContacSection__formArea {
+        max-width: 100%;
+    }
+
+    .ContactSection__wrap {
+        align-items: flex-start;
+    }
+
+    .ContactSection__card {
+        max-width: 100%;
+    }
+}

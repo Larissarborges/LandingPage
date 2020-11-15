@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://use.typekit.net/zvv0mja.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/Global.css">
     <link rel="stylesheet" href="./css/PageHeader.css">
@@ -19,43 +20,48 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="PageContent">
+    <div class="PageContent">
         <header class="PageHeader">
             <div class="PageHeader__logo">
                 <a href="/">
-                    <img src="./assets/imgs/logo-anc-hd@1X.png" alt="Logo da Anc">
+                    <img class="PageHeader__logo-image" src="./assets/imgs/logo-anc-hd@1X.png" alt="Logo da Anc">
                 </a>
             </div>
-            <nav class="PageHeader__menu">
-                <ul class="PageHeader__menu-principal">
-                    <li class="home">
-                        <a href="/">HOME</a>
-                    </li>
-                    <li class="about">
-                        <a href="#about">SOBRE NÓS</a>
-                    </li>
-                    <li class="represent">
-                        <a href="#represent">QUEM REPRESENTAMOS</a>
-                    </li>
-                    <li class="partners">
-                        <a href="#partners">PARCEIROS</a>
-                        <ul class="PageHeader__menu-secondary">
-                            <li class="partners-unimedica">
-                                <a href="#partners-unimedica">Unimedica</a>
-                            </li>
-                            <li class="partners-eligibilidade">
-                                <a  href="#partners-eligibilidade">Eligibilidade Brasil</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="operators">
-                        <a href="#operators">OPERADORAS</a>
-                    </li>
-                    <li class="contact">
-                        <a href="#contact">CONTATO</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="PageHeader__clickSection">
+                <button class="PageHeader__button">
+                    <i class="fa fa-lg fa-bars"></i>
+                </button>
+                <nav class="PageHeader__menu">
+                    <ul class="PageHeader__principalMenu">
+                        <li>
+                            <a class="PageHeader__principalMenu-link" href="/">HOME</a>
+                        </li>
+                        <li>
+                            <a class="PageHeader__principalMenu-link" href="#about">SOBRE NÓS</a>
+                        </li>
+                        <li>
+                            <a class="PageHeader__principalMenu-link" href="#represent">QUEM REPRESENTAMOS</a>
+                        </li>
+                        <li class="PageHeader__principalMenu-partnersItem">
+                            <a class="PageHeader__principalMenu-link" href="#partners">PARCEIROS</a>
+                            <ul class="PageHeader__secondaryMenu">
+                                <li>
+                                    <a  class="PageHeader__secondaryMenu-link" href="#partners-unimedica">Unimedica</a>
+                                </li>
+                                <li>
+                                    <a class="PageHeader__secondaryMenu-link" href="#partners-eligibilidade">Eligibilidade Brasil</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="PageHeader__principalMenu-link" href="#operators">OPERADORAS</a>
+                        </li>
+                        <li>
+                            <a class="PageHeader__principalMenu-link" href="#contact">CONTATO</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <section class="MainSection">
@@ -85,19 +91,19 @@
                 </p>
                 <div class="AboutSection__grid">
                     <div class="AboutSection__grid-card">
-                        <img src="../Teste-Marlin/assets/imgs/award-solid@1X.png" alt="Ícone de prêmio">
+                        <img src="./assets/imgs/award-solid@1X.png" alt="Ícone de prêmio">
                         <p class="AboutSection__grid-text">Garantir que a atividade exercida seja a mesma função na carteira de trabalho.</p class="AboutSection__grid-model">
                     </div>
                     <div class="AboutSection__grid-card">
-                        <img src="../Teste-Marlin/assets/imgs/user-clock-solid@1X.png" alt="Ícone de usuário e relógio">
+                        <img src="./assets/imgs/user-clock-solid@1X.png" alt="Ícone de usuário e relógio">
                         <p class="AboutSection__grid-text">Jornada de trabalho de 8 horas diárias e 44 horas semanais.</p>
                     </div>
                     <div class="AboutSection__grid-card">
-                        <img src="../Teste-Marlin/assets/imgs/money-bill-wave-solid@1X.png" alt="Ícone de dinheiro">
+                        <img src="./assets/imgs/money-bill-wave-solid@1X.png" alt="Ícone de dinheiro">
                         <p class="AboutSection__grid-text">Piso salarial fixado em convenção ou acordo coletivo de trabalho.</p>
                     </div>
                     <div class="AboutSection__grid-card">
-                        <img src="../Teste-Marlin/assets/imgs/calendar-alt-solid@1X.png" alt="Ícone de calendário">
+                        <img src="./assets/imgs/calendar-alt-solid@1X.png" alt="Ícone de calendário">
                         <p class="AboutSection__grid-text">Definido o “Dia do Comerciário”, comemorado no dia 30 de outubro.</p>
                     </div>
                 </div>
@@ -115,29 +121,37 @@
                 <hr class="Divisor PartnersSection__divisor"/>
                 <div class="PartnersSection__grid">
                     <div class="PartnersSection__grid-card">
-                        <img src="./assets/imgs/logo-unimedica@1X.png" alt="Logo da Unimedica">
-                        <p class="PartnersSection__grid-text">
-                            Associados da <span class="PartnersSection__grid-bold">ANC</span> possuem como benefício <span class="PartnersSection__grid-bold">descontos nos honorários da consultoria Unimedica</span> para assuntos jurídicos 
-                            (defesa do consumidor), contábeis e fiscais.
-                        </p>
-                        <p class="PartnersSection__grid-text">
-                            Os descontos nos honorários serão aplicados, apenas,  se houver a necessidade de contratação de um profissional da Unimedica 
-                            (advogado ou contador), meras respostas às dúvidas, e breves orientações serão concedidas <span class="PartnersSection__grid-bold">gratuitamente</span> através dos telefones 
-                            e e-mail de contato.   
-                        </p>
+                        <div class="PartnersSection__grid-card-textContainer">
+                            <div class="PartnerSection__grid-card-imageContainer">
+                                <img src="./assets/imgs/logo-unimedica@1X.png" alt="Logo da Unimedica">
+                            </div>
+                            <p class="PartnersSection__grid-text">
+                                Associados da <span class="PartnersSection__grid-bold">ANC</span> possuem como benefício <span class="PartnersSection__grid-bold">descontos nos honorários da consultoria Unimedica</span> para assuntos jurídicos 
+                                (defesa do consumidor), contábeis e fiscais.
+                            </p>
+                            <p class="PartnersSection__grid-text">
+                                Os descontos nos honorários serão aplicados, apenas,  se houver a necessidade de contratação de um profissional da Unimedica 
+                                (advogado ou contador), meras respostas às dúvidas, e breves orientações serão concedidas <span class="PartnersSection__grid-bold">gratuitamente</span> através dos telefones 
+                                e e-mail de contato.   
+                            </p>
+                        </div>
                         <button class="PartnersSection__button">
                             ACESSAR SITE
                         </button>
                     </div>
                     <div class="PartnersSection__grid-card">
-                        <img src="./assets/imgs/logo-eligibilidade@1X.png" alt="Logo da Eligibilidade">
-                        <p class="PartnersSection__grid-text">
+                        <div class="PartnersSection__grid-card-textContainer">
+                            <div class="PartnerSection__grid-card-imageContainer">
+                                <img src="./assets/imgs/logo-eligibilidade@1X.png" alt="Logo da Eligibilidade">
+                            </div>
+                            <p class="PartnersSection__grid-text">
                             Através de nossa parceira com a <span class="PartnersSection__grid-bold">Federação de associações Elegibilidade Brasil</span>, nossos associados poderão usufruir de 
                             benefícios como descontos em <span class="PartnersSection__grid-bold">Faculdades, farmácias, hotéis</span> e outros serviços em geral.   
-                        </p>
-                        <a class="PartnersSection__grid-link" href="/">
-                            ACESSE O LINK ABAIXO E CONFIRA OS BENEFÍCIOS DISPONÍVEIS.
-                        </a> 
+                            </p>
+                            <a class="PartnersSection__grid-link" href="/">
+                            <p>ACESSE O LINK ABAIXO E CONFIRA OS BENEFÍCIOS DISPONÍVEIS.</p> 
+                            </a>
+                        </div>
                         <button class="PartnersSection__button">
                             ACESSAR SITE
                         </button>
@@ -205,49 +219,65 @@
 
         <section class="ContactSection">
             <div class="Container ContactSection__container">
-                <h1 class="ContactSection__title">
-                    FALE CONOSCO
-                </h1>
-                <hr class="Divisor ContactSection__divisor">
-                <p class="ContactSection__description">
-                    Envie-nos uma mensagem agora mesmo!
-                </p>
-                <form class="ContacSection__formArea">
-                    <fieldset class="ContactSection__formArea-section">
-                        <label class="ContactSection__formArea-section-label" for="name">Nome completo</label>
-                        <input class="ContactSection__formArea-section-input" type="text" name="name" placeholder="Digite seu nome">
-                    </fieldset>
-                    <fieldset class="ContactSection__formArea-section">
-                        <label class="ContactSection__formArea-section-label" for="email">E-mail de contato</label>
-                        <input  class="ContactSection__formArea-section-input" type="text" name="email" placeholder="seu@email.com.br">
-                    </fieldset>
-                    <fieldset class="ContactSection__formArea-section">
-                        <legend class="ContactSection__formArea-section-legend">Escreva aqui a sua mensagem:</legend>
-                        <textarea class="ContactSection__formArea-section-textarea" name="message" cols="30" rows="10"></textarea>
-                    </fieldset>
-
-                    <button class="ContactSection__button">
-                        ENVIAR
-                    </button>
-                </form>
-
-                <div class="ContactSection__card">
-                    <h2 class="ContactSection__card-title">
-                        SE PREFERIR, FALE <br> <span class="ContactSection__card-title-color">PELOS NOSSOS TELEFONES</span>
-                    </h2>
-                    <p class="ContactSection__card-telephone">
-                        <span class="ContactSection__card-telephone-icon"></span> 
-                        NOSSOS TELEFONES: <br> <span class="ContactSection__card-telephone-color">(21) 3553-1602 - (21) 3553-0805</span>
-                    </p>
-                    <p class="ContactSection__card-whatsapp">
-                        <span class="ContactSection__card-whatsapp-icon"></span>
-                        WHATSAPP: (21) 99999-9999
-                    </p>
-                    <p class="ContactSection__card-address">
-                        <span class="ContactSection__card-address-icon"></span>
-                        NOSSO ENDEREÇO <br>
-                        <span class="ContactSection__card-adress-color">Rua da Quitanda, 62, sala 701, <br> Centro do Rio de Janeiro - RJ CEP 20011-030</span>
-                    </p>
+                <div class="ContactSection__formContainer">
+                    <div class="ContactSection__wrap">
+                        <h1 class="ContactSection__title">
+                            FALE CONOSCO
+                        </h1>
+                        <hr class="Divisor ContactSection__divisor">
+                        <p class="ContactSection__description">
+                            Envie-nos uma mensagem agora mesmo!
+                        </p>
+                        <form class="ContacSection__formArea">
+                            <fieldset class="ContactSection__formArea-section">
+                                <label class="ContactSection__formArea-section-label" for="name">Nome completo</label>
+                                <input class="ContactSection__formArea-section-input" type="text" name="name" placeholder="Digite seu nome">
+                            </fieldset>
+                            <fieldset class="ContactSection__formArea-section">
+                                <label class="ContactSection__formArea-section-label" for="email">E-mail de contato</label>
+                                <input  class="ContactSection__formArea-section-input" type="text" name="email" placeholder="seu@email.com.br">
+                            </fieldset>
+                            <fieldset class="ContactSection__formArea-section">
+                                <legend class="ContactSection__formArea-section-legend">Escreva aqui a sua mensagem:</legend>
+                                <textarea class="ContactSection__formArea-section-textarea" name="message" cols="30" rows="10"></textarea>
+                            </fieldset>
+        
+                            <button class="ContactSection__button">
+                                ENVIAR
+                            </button>
+                        </form>
+        
+                        <div class="ContactSection__card">
+                            <h2 class="ContactSection__card-title">
+                                SE PREFERIR, FALE
+                            </h2>
+                            <h2 class="ContactSection__card-title-color">PELOS NOSSOS TELEFONES</h2>
+                            <div class="ContactSection__row">
+                            <span class="ContactSection__card-telephone-icon"></span>
+                            <div>
+                            <p class="ContactSection__card-telephone"> 
+                                NOSSOS TELEFONES:
+                            </p>
+                            <p class="ContactSection__card-telephone-color">(21) 3553-1602 - (21) 3553-0805</p>
+                            </div>
+                            </div>
+                            <p class="ContactSection__card-whatsapp">
+                                <span class="ContactSection__card-whatsapp-icon"></span>
+                                <span class="ContactSection__card-whatsapp-text">WHATSAPP: (21) 99999-9999</span>
+                            </p>
+                            <div class="ContactSection__row2">
+                                <span class="ContactSection__card-address-icon"></span>
+                                <div>
+                                    <p class="ContactSection__card-address">
+                                        NOSSO ENDEREÇO
+                                    </p>
+                                    <p>
+                                        <span class="ContactSection__card-adress-color">Rua da Quitanda, 62, sala 701, <br> Centro do Rio de Janeiro - RJ CEP 20011-030
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- <div class="ContactSection__photo">
@@ -259,6 +289,14 @@
             <p class="PageFooter__text"> 2020 - Desenvolvido por <span class="PageFooter__text-image"><img src="./assets/imgs/Marlin_Logo_Branca_Vetor_RGB.svg" alt="Logo da Merlin"></span></p>
         </footer>
     </div>
+
+    <script>
+        const content = document.getElementsByClassName('PageHeader__menu')
+        const button = document.getElementsByClassName('PageHeader__button')
+        button[0].onclick = function() {
+            content[0].classList.toggle('active')
+        }
+    </script>
 
 </body>
 </html>
