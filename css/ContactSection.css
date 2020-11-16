@@ -97,11 +97,13 @@
 }
 
 .ContactSection__formArea-section-textarea {
+    width: 100%;
+
     border: none;
     border-radius: 8px;
     
     resize: none;
-    overflow-y: scroll;
+    overflow-y: hidden;
 
     margin-bottom: 47px;
     padding: 20px;
@@ -129,7 +131,8 @@
 }
 
 .ContactSection__card {
-    max-width: 570px;
+    width: 100%;
+    max-width: 580px;
 
     background-color: var(--color-white);
     
@@ -142,7 +145,7 @@
 .ContactSection__card-title-color {
     color: var(--color-black-title);
 
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: center;
 }
 
@@ -157,7 +160,7 @@
 }
 
 .ContactSection__row {
-    margin-bottom: 52px;
+    margin-bottom: 26px;
 }
 
 .ContactSection__row,
@@ -169,19 +172,20 @@
 .ContactSection__card-telephone {
     color: var(--color-gray-phone);
 
-    font-size: 1.250em;
+    font-size: 1em;
     font-weight: 700;
 
     display: flex;
 }
 
 .ContactSection__card-telephone-icon {
-    width: 58px;
-    height: 58px;
+    width: 40px;
+    height: 40px;
 
     margin-right: 25px;
 
-    background-image: url('../assets/imgs/telephone@1X.png');
+    content: url('../assets/imgs/telephone@1X.png');
+    background-repeat: no-repeat;
 
     display: flex;
 }
@@ -192,17 +196,25 @@
     font-weight: 800;
 }
 
+.ContactSection__card-divisor {
+    background-color: var(--color-divisor);
+    width: 527px;
+    height: 3px;
+    margin-bottom: 23px;
+}
+
 .ContactSection__card-whatsapp {
-    width: 100%;
+    max-width: 100%;
     
     background-color: var(--color-green-bg);
     color: var(--color-white);
 
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 700;
     text-align: center;
 
-    margin-bottom: 74px; 
+    margin-bottom: 23px;
+
 
     border-radius: 8px;
 
@@ -220,6 +232,7 @@
     background-image: url('../assets/imgs/whatsapp-brands@1X.png');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 2em;
 }
 
 .ContactSection__card-whatsapp-text {
@@ -229,16 +242,18 @@
 .ContactSection__card-address {
     color: var(--color-gray-phone);
 
-    font-size: 1.250em;
+    font-size: 1em;
 
     display: flex;
 }
 
 .ContactSection__card-address-icon {
-    width: 57px;
-    height: 51px;
+    width: 42px;
+    height: 42px;
     
-    background-image: url('../assets/imgs/map@1X.png');
+    content: url('../assets/imgs/map@1X.png');
+    /* background-size: 3em;
+    background-repeat: no-repeat; */
 
     display: flex;
 
@@ -246,7 +261,7 @@
 }
 
 .ContactSection__card-adress-color {
-    font-size: 1em;
+    font-size: 0.875em;
 
     color: var(--color-blue);
 }
@@ -268,5 +283,33 @@
 
     .ContactSection__card {
         max-width: 100%;
+    }
+
+    .ContactSection__card-title {
+        font-size: 2em;
+    }
+
+    .ContactSection__card-telephone,
+    .ContactSection__card-address {
+        font-size: 1.250em; 
+    }
+
+    .ContactSection__card-telephone-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+    .ContactSection__card-whatsapp {
+        font-size: 1.250em;
+        margin-right: 0;
+    }
+
+    .ContactSection__card-address-icon {
+        width: 57px;
+        height: 51px;
+    }
+
+    .ContactSection__card-adress-color {
+        font-size: 1em;
     }
 }

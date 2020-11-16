@@ -245,7 +245,7 @@
                             </fieldset>
                             <fieldset class="ContactSection__formArea-section">
                                 <legend class="ContactSection__formArea-section-legend">Escreva aqui a sua mensagem:</legend>
-                                <textarea class="ContactSection__formArea-section-textarea" name="message" cols="30" rows="10"></textarea>
+                                    <textarea class="ContactSection__formArea-section-textarea" name="message" cols="30" rows="10"></textarea>
                             </fieldset>
         
                             <button class="ContactSection__button">
@@ -259,7 +259,7 @@
                             </h2>
                             <h2 class="ContactSection__card-title-color">PELOS NOSSOS TELEFONES</h2>
                             <div class="ContactSection__row">
-                            <span class="ContactSection__card-telephone-icon"></span>
+                            <img class="ContactSection__card-telephone-icon" alt="Imagem de um telefone"></img>
                             <div>
                             <p class="ContactSection__card-telephone"> 
                                 NOSSOS TELEFONES:
@@ -267,12 +267,14 @@
                             <p class="ContactSection__card-telephone-color">(21) 3553-1602 - (21) 3553-0805</p>
                             </div>
                             </div>
+                            <hr class="Divisor ContactSection__card-divisor">
                             <p class="ContactSection__card-whatsapp">
                                 <span class="ContactSection__card-whatsapp-icon"></span>
                                 <span class="ContactSection__card-whatsapp-text">WHATSAPP: (21) 99999-9999</span>
                             </p>
+                            <hr class="Divisor ContactSection__card-divisor">
                             <div class="ContactSection__row2">
-                                <span class="ContactSection__card-address-icon"></span>
+                                <image class="ContactSection__card-address-icon" alt="Imagem de mapa"></image>
                                 <div>
                                     <p class="ContactSection__card-address">
                                         NOSSO ENDEREÇO
@@ -292,7 +294,7 @@
         </section>
 
         <footer class="PageFooter">
-            <p class="PageFooter__text"> 2020 - Desenvolvido por <span class="PageFooter__text-image"><img src="./assets/imgs/Marlin_Logo_Branca_Vetor_RGB.svg" alt="Logo da Merlin"></span></p>
+            <p class="PageFooter__text"> 2020 - Desenvolvido por <img class="PageFooter__text-image" src="./assets/imgs/Marlin_Logo_Branca_Vetor_RGB.svg" alt="Logo da Merlin"></p>
         </footer>
     </div>
 
@@ -310,7 +312,7 @@
             myMenu.style.height = "0";
             ctrlMenu = false;
         } else {
-            myMenu.style.height = "50vh";
+            myMenu.style.height = "100vh";
             ctrlMenu = true;
         }               
     }    
