@@ -38,7 +38,7 @@
 }
 
 #PageHeader-icon-hamburguer:hover {
-    background-color: #ddd;
+    background-color: var(--color-button-header);
     cursor: pointer;
 }
 
