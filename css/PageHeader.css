@@ -1,12 +1,10 @@
 .PageContent {
     width: 100%;
-    /* height: 4520px; */
 }
 
 .PageHeader {
     width: 100%;
     max-width: 1600px;
-    /* height: 150px; */
 
     padding: 0 20px;
     
@@ -28,66 +26,66 @@
     height: 100%;
 }
 
-.PageHeader__button {
-    background-color: var(--color-blue);
-    color: var(--color-white);
-
-    border: none;
-    border-radius: 5px;
-    
-    height: 40px;
-    padding: 10px 20px;
+#PageHeader-icon-hamburguer:hover {
+    background-color: #ddd;
+    cursor: pointer;
 }
 
-.PageHeader__menu  {
-    display: none;
+#PageHeader__menu  {
+    height: 0;
+    overflow: hidden;
 }
 
-.PageHeader__clickSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.PageHeader__principalMenu-link {
+    color: var(--color-gray);
+    font-weight: 700;
 }
 
-.PageHeader__menu.active {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
+.PageHeader__secondaryMenu-link {
+    color: var(--color-gray-light);
+    font-weight: 400;
 }
 
 .PageHeader__principalMenu,
 .PageHeader__secondaryMenu {
-    width: 100%;
+        width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
 
-    list-style-type: none;
+        list-style-type: none;
 }
 
-/* .PageHeader__principalMenu-partnersItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
+.PageHeader__principalMenu-link,
+.PageHeader__secondaryMenu-link {
+    font-size: 0.875em;
+}
 
+.PageHeader__principalMenu-link:hover,
+.PageHeader__secondaryMenu-link:hover {
+    color: var(--color-blue);
+}
 
+@media (min-width: 1024px) {
+    .PageHeader {
+        display: flex;
+        justify-content: space-between;
+    }
 
-
-
-/* @media (min-width: 768px) {
-    .PageHeader__logo {
+    #PageHeader-icon-hamburguer {
         display: none;
+    }
+
+    #PageHeader__menu {
+        width: 100%;
+        height: auto!important;
+    }
+
+    .PageHeader__principalMenu {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
-@media (min-width: 1100px) {
-    .PageHeader__logo {
-        display: none;
-    }
-} */
