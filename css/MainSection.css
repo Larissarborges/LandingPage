@@ -39,7 +39,7 @@
 
     max-width: calc(var(--breakpoint-widescreen) / 3);
 
-    margin-bottom: var(--margin-bottom);
+    margin-bottom: 39px;
 }
 
 .MainSection__title-bold {
@@ -55,7 +55,7 @@
 
     max-width: calc(var(--breakpoint-widescreen) / 2);
 
-    margin-bottom: var(--margin-bottom);
+    margin-bottom: 34px;
 }
 
 .MainSection__description-color {
@@ -71,8 +71,7 @@
     border-radius: 8px;
     border: none;
 
-    width: 245px;
-    height: 58px;
+    padding: 22px 34px;
 
     font-size: 0.875em;
     font-weight: 800;
@@ -83,6 +82,11 @@
 }
 
 @media (min-width: 768px) {
+    .MainSection {
+        margin-top: 40px;
+    }
+
+@media (min-width: 1100px) {
     .MainSection {
         margin-top: 120px;
     }

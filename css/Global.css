@@ -1,7 +1,7 @@
 :root {
     --color-yellow: #FFC800;
     --color-blue: #569AC4;
-    --color-blue-dark: #6AB7E7;
+    --color-blue-bg: #6AB7E7;
     --color-gray: #929292;
     --color-gray-light: #808080;
     --color-gray-dark: #585858;
@@ -28,10 +28,10 @@
     --margin-bottom-button: 40px;
 }
 
-/* @font-face {
+@font-face {
     font-family: 'MyriadProRegular';
     src: url('./fonts/MyriadProRegular')
-} */
+}
 
 * {
     margin: 0;
@@ -40,7 +40,7 @@
     text-decoration: none;
     transition: all 0.3s;
     outline: none;
-    font-family: 'open-sans', sans-serif;
+    font-family: 'open-sans', 'Myr';
 }
 
 body {

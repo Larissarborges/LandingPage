@@ -54,10 +54,6 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 32px; 
     }
-    
-    /* .BenefitsSection__grid-card:last-child {
-        justify-items: center;
-    } */
 }
 
 @media (min-width: 1400px) {

@@ -1,7 +1,7 @@
 .AboutSection {
     width: 100%;
 
-    background-color: var(--color-blue-dark);
+    background-color: var(--color-blue-bg);
 
     display: flex;
 }

@@ -45,13 +45,7 @@
 
     border: 3px solid lightgrey;
     border-radius: 8px;
-
-    /* margin-bottom: 40px; */
 }
-
-/* .PartnersSection__grid-card+.PartnersSection__grid-card {
-    margin-left: 40px;
-} */
 
 .PartnersSection__grid-card-textContainer {
     display: flex;
@@ -80,13 +74,10 @@
 .PartnersSection__grid-link {
     font-weight: 600;
     text-decoration: underline;
-
-    /* padding-bottom: 20px; */
 }
 
 .PartnersSection__button {
-    width: 241px;
-    padding: 18px;
+    padding: 18px 55px;
 
     color: var(--color-white);
     background-color: var(--color-blue);
@@ -96,8 +87,6 @@
 
     border: none;
     border-radius: 8px;
-
-    /* margin-bottom: var(--margin-bottom-button); */
 }
 
 .PartnersSection__button:hover {
