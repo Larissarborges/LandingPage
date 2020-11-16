@@ -1,4 +1,6 @@
 .MainSection {
+    margin-top: 20px;
+    
     width: 100%;
 
     background-color: var(--color-blue);
